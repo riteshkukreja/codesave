@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>testing</title>
+	<style type="text/css">
+		body {
+			background-color: #CCC;
+		}
+		#allBooks, #issuedBooks, #newArrival, #recommendedBooks {
+			width: 100%;
+			border: 1px solid #CCC;
+			background: #FFF;
+			margin-bottom:10px;
+		}
+
+		#allBooks header, #newArrival header , #issuedBooks header , #recommendedBooks header{
+			padding: 10px;
+			color: #DDD;
+		}
+
+		#allBooks header {
+			background: #060;
+		}
+
+		#recommendedBooks header {
+			background-color: #354770;
+		}
+
+		#issuedBooks header {
+			background-color: #003;
+		}
+
+		#newArrival header {
+			background-color: #ff3212;
+		}
+
+		#book {
+			width: 150px;
+			height: auto;
+			padding: 10px;
+			display: inline-block;
+			margin: 10px;
+			background-color: #444;
+		}
+
+		#book #bimg {
+			text-align: center;
+			width: 100%;
+		}
+
+		#book #btitle {
+			width: 100%;
+			color: #FFF;
+			font-size: 16px;
+		}
+
+		#book #bauthor {
+			width: 100%;
+			color: #AAA;
+			font-size: 12px;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="container">
+		<div id="issuedBooks">
+			<header>Issued Books</header>
+			<div id='issued'></div>
+		</div>
+
+		<div id="newArrival">
+			<header>New Arrival</header>
+			<div id='new'></div>
+		</div>
+
+		<div id="recommendedBooks">
+			<header>Recommended Books</header>
+			<div id='recom'></div>
+		</div>
+
+		<div id="allBooks">
+			<header>All Books</header>
+			<div id='all'></div>
+		</div>	
+	</div>
+	<script type="text/javascript" src='../script/jquery-2.1.4.min.js'></script>
+	<script type="text/javascript" src='../script/ajax.js'></script>
+</body>
+</html>
